@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #1e3799;
+}
+
+main{
+	background-color: #1e3799;
+	padding: 20px;
+	width: 40%;
+	border-radius: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Container da imagem para posicionar o anel */
+.profile-container {
+    position: relative;
+    width: 150px; /* Ajuste conforme seu layout */
+    height: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* O anel que vai girar */
+.orbit-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #4ade80; /* Cor verde do seu texto */
+    border-bottom-color: #4ade80;
+    animation: spin 3s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Efeito suave nos botões */
+.btn-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(74, 222, 128, 0.4);
+    background-color: #3d5a6e; /* Um tom levemente mais claro */
+}
+
+
+h2 {
+	color: #fff;
+	font-family: "Tinos", serif;
+  	font-weight: 700;
+  	font-style: normal;
+}
+
+.subtitle{
+	color: #82ccdd;
+	font-family: "Tinos", serif;
+  	font-weight: 400;
+  	font-style: normal;
+  	padding: 0px 0px 30px 0px;
+}
+
+
+.li{
+	background-color: #3c6382;
+	border-radius: 20px;
+	width: 70%;
+	margin: 0 auto;
+	padding: 8px;
+}
+.li:hover{
+	background-color: #0a3d62;
+	transition: 1s;
+}
+
+h3 {
+	color: #78e08f;
+	font-family: "Tinos", serif;
+  	font-weight: 200;
+  	font-style: italic;
+}
+p{
+	color: #fff;
+	font-size: 15px;
+}
+a {
+	text-decoration: none;
+	cursos: pointer;
+}
+a.active {
+	background-color: #0a3d62;
+}
+
+
+.fa-brands, .fa-regular{
+	font-size: 25px;
+	color: #fff;
+}
+
+
